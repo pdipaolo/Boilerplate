@@ -9,7 +9,7 @@ function deviceLanguage(): string | undefined {
   if (supportedLanguages.includes(lowerCaseLocale)) {
     return lowerCaseLocale;
   }
-  return;
+  return undefined;
 }
 
 export {deviceLanguage};
