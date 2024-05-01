@@ -12,4 +12,4 @@ function locale() {
     : NativeModules.I18nManager.localeIdentifier;
 }
 
-export {locale};
+export {locale, isIos };
