@@ -15,5 +15,6 @@
     "experimentalDecorators": true,
     "lib": ["esnext", "dom"]
   },
-  "exclude": ["node_modules", "*.config.js"]
+  "include": ["src/components", "custom.d.ts"],
+  "exclude": ["node_modules", "*.config.js"],
 }
