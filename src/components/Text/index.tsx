@@ -11,7 +11,10 @@ function Text(props: PropsTypes): JSX.Element {
   const { style: propStyles, children, onPress } = props;
 
   return (
-    <RNText style={[styles.text, propStyles]}>
+    <RNText
+      style={[styles.text, propStyles]}
+      adjustsFontSizeToFit={true}
+    >
       {typeof children === 'string' ? (
         <Trans
           components={{
@@ -28,6 +31,7 @@ function Text(props: PropsTypes): JSX.Element {
               <RNText
                 style={[styles.text, propStyles, styles.link]}
                 onPress={onPress}
+                
               />
             ),
           }}
