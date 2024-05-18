@@ -2,19 +2,18 @@ import React from 'react';
 
 import { type SvgProps } from 'react-native-svg';
 
-import Bonus from '../../assets/svg/bonus.svg';
 import ChevronLeftIcon from '../../assets/svg/chevron-left.svg';
 
-import Tab1FilledIcon from '../../assets/svg/bonus.svg';
-import Tab1OutlinedIcon from '../../assets/svg/bonus.svg';
-import Tab2FilledIcon from '../../assets/svg/bonus.svg';
-import Tab2OutlinedIcon from '../../assets/svg/bonus.svg';
-import Tab3FilledIcon from '../../assets/svg/bonus.svg';
-import Tab3OutlinedIcon from '../../assets/svg/bonus.svg';
-import Tab4FilledIcon from '../../assets/svg/bonus.svg';
-import Tab4OutlinedIcon from '../../assets/svg/bonus.svg';
-import Tab5FilledIcon from '../../assets/svg/bonus.svg';
-import Tab5OutlinedIcon from '../../assets/svg/bonus.svg';
+import Tab1FilledIcon from '../../assets/svg/chevron-left.svg';
+import Tab1OutlinedIcon from '../../assets/svg/chevron-left.svg';
+import Tab2FilledIcon from '../../assets/svg/chevron-left.svg';
+import Tab2OutlinedIcon from '../../assets/svg/chevron-left.svg';
+import Tab3FilledIcon from '../../assets/svg/chevron-left.svg';
+import Tab3OutlinedIcon from '../../assets/svg/chevron-left.svg';
+import Tab4FilledIcon from '../../assets/svg/chevron-left.svg';
+import Tab4OutlinedIcon from '../../assets/svg/chevron-left.svg';
+import Tab5FilledIcon from '../../assets/svg/chevron-left.svg';
+import Tab5OutlinedIcon from '../../assets/svg/chevron-left.svg';
 
 const ICON_MODE = {
   FILLED: 'filled' as 'filled',
@@ -31,7 +30,6 @@ const BOTTOM_NAV_ICON = {
 
 const ICON = {
   // General
-  BONUS: 'bonus' as 'bonus',
   CHEVRON_LEFT: 'chevron-left' as 'chevron-left',
   // Tab
   TAB1_FILLED:
@@ -58,10 +56,6 @@ const ICON = {
 
 const ICON_COMPONENT = {
   // General
-  BONUS: {
-    ID: ICON.BONUS,
-    COMPONENT: (props: SvgProps) => <Bonus {...props} />,
-  },
   CHEVRON_LEFT: {
     ID: ICON.CHEVRON_LEFT,
     COMPONENT: (props: SvgProps) => <ChevronLeftIcon {...props} />,

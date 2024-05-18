@@ -17,10 +17,10 @@ import {Provider} from 'react-redux';
 import {store} from './redux';
 import {I18nextProvider} from 'react-i18next';
 import i18next from 'i18next';
+import { Loader } from './components/Loader';
 
 function App(): React.JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
-
   const backgroundStyle = {
     backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
   };
@@ -44,6 +44,7 @@ function App(): React.JSX.Element {
           backgroundColor={backgroundStyle.backgroundColor}
         />
         <ApplicationNavigator />
+        <Loader />
       </I18nextProvider>
     </Provider>
   );

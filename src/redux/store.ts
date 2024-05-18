@@ -1,10 +1,12 @@
 import {configureStore} from '@reduxjs/toolkit';
 import exampleSlice from '../screens/Example/slices';
+import loadingSlice from '../components/Loader/slices';
 
 const createStore = () => {
   const store = configureStore({
     reducer: {
       example: exampleSlice.reducer,
+      loading: loadingSlice,
     },
     middleware: getDefaultMiddleware => getDefaultMiddleware(),
   });

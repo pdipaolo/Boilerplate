@@ -8,7 +8,7 @@ function Example() {
   return (
     <>
       <Text>{translate('example:helloUser', {name: 'User'})}</Text>
-      <Icon id={ICON.BONUS}/>
+      <Icon id={ICON.CHEVRON_LEFT}/>
     </>
   );
 }
