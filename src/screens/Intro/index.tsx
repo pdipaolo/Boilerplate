@@ -5,7 +5,6 @@ import { presentLoading } from '../../components/Loader/slices';
 function Intro() {
   const dispatch = useAppDispatch();
   useEffect(()=>{
-    console.log('reoler')
     dispatch(presentLoading())
   },[])
 
