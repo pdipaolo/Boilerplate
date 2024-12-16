@@ -7,12 +7,9 @@ import {
 } from '@react-navigation/stack';
 
 import { introRoute } from '../../screens/Intro/route';
-import { tab1Route } from '../../screens/Tab1/route';
-
 
 type StackParamsList = {
   [introRoute]: undefined;
-  [tab1Route]: undefined;
 };
 
 export {

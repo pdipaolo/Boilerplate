@@ -1,0 +1,8 @@
+{
+  "helloUser": "Hello, my name is {{name}}",
+  "tab1": { "tabTitle": "Tab 1" },
+  "tab2": { "tabTitle": "Tab 2" },
+  "tab3": { "tabTitle": "Tab 3" },
+  "tab4": { "tabTitle": "Tab 4" },
+  "tab5": { "tabTitle": "Tab 5" }
+}

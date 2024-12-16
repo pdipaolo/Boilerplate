@@ -2,7 +2,7 @@ import React from 'react';
 
 import { View, Pressable } from 'react-native';
 
-import { type BottomTabBarProps } from '../../navigators/BottomTabs/types';
+import { type BottomTabBarProps } from '../../navigators/HomeTabs/types';
 import theme from '../../theme';
 import Icon from '../Icon';
 import { ICON_MODE } from '../Icon/constants';
@@ -15,7 +15,6 @@ function TabBar(props: BottomTabBarProps): JSX.Element {
   const { state, navigation } = props;
   const { routes, index: stateIndex } = state;
   const { navigate } = navigation;
-
   return (
       <View style={styles.container}>
         {routes.map((route, index) => {

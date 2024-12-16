@@ -6,8 +6,10 @@ import { styles } from './styles';
 function BootSplash({ onAnimationEnd }: PropsTypes): JSX.Element {
 
   useEffect(() => {
+    
     setTimeout(() => {
-      onAnimationEnd();
+
+      // onAnimationEnd();
     }, 3000);
   }, []);
 
