@@ -15,9 +15,10 @@ function RootStack(): JSX.Element {
 
   return (
     <Stack.Navigator >
-      {!isLoggedIn ? routes.map((route) => (
-        <Stack.Screen key={route.name} {...route} />
-      )):<Stack.Screen name="Home" component={HomeTabs} options={{ headerShown: false }}/>}
+      {!isLoggedIn ?
+        routes.map((route) => (<Stack.Screen key={route.name} {...route} />)) :
+        <Stack.Screen name="Home" component={HomeTabs} options={{ headerShown: false }} />
+      }
     </Stack.Navigator>
   );
 }

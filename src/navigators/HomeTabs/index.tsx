@@ -17,8 +17,6 @@ function HomeTabs(): JSX.Element {
         <Tab.Screen
           key={route.name}
           {...route}
-          options={{
-          }}
         />
       ))}
     </Tab.Navigator>

@@ -3,7 +3,7 @@ import { createSlice } from '@reduxjs/toolkit';
 import { PropsTypes } from './types';
 
 const initialState: PropsTypes = {
-  isLoggedIn: false,
+  isLoggedIn: true,
 };
 
 const loginSlice = createSlice({
