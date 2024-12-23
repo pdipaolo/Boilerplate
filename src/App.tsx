@@ -16,6 +16,7 @@ import { store } from './redux';
 import { I18nextProvider } from 'react-i18next';
 import i18next from 'i18next';
 import { Loader } from './components/Loader';
+import BootSplash from './screens/BootSplash';
 
 function App(): React.JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
@@ -30,7 +31,6 @@ function App(): React.JSX.Element {
     };
 
     init().finally(async () => {
-      console.log('App is ready');
     });
   }, []);
 
@@ -41,6 +41,13 @@ function App(): React.JSX.Element {
           barStyle={isDarkMode ? 'light-content' : 'dark-content'}
           backgroundColor={backgroundStyle.backgroundColor}
         />
+        {bootSplashIsVisible && (
+        <BootSplash
+          onAnimationEnd={() => {
+            setBootSplashIsVisible(false);
+          }}
+        />
+      )}
         <ApplicationNavigator />
         <Loader />
       </I18nextProvider>

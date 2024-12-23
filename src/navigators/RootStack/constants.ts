@@ -1,5 +1,5 @@
 import introRoute from '../../screens/Intro/route';
 
-const routes = [introRoute];
+const routes = [ introRoute];
 
 export { routes };
