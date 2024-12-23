@@ -1,12 +1,16 @@
 import {configureStore} from '@reduxjs/toolkit';
 import loadingSlice from '../components/Loader/slices';
 import loginSlice from '../screens/Login/slices';
+import { api } from './services';
+import configSlice  from './slices';
 
 const createStore = () => {
   const store = configureStore({
     reducer: {
       login: loginSlice,
       loading: loadingSlice,
+      config: configSlice,
+      [api.reducerPath]: api.reducer,
     },
     middleware: getDefaultMiddleware => getDefaultMiddleware(),
   });

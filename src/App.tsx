@@ -18,6 +18,7 @@ import i18next from 'i18next';
 import { Loader } from './components/Loader';
 import BootSplash from './screens/BootSplash';
 import { RealmProvider } from './database';
+import { thunkFetchConfiguration } from './redux/services';
 
 function App(): React.JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
@@ -28,6 +29,8 @@ function App(): React.JSX.Element {
 
   useEffect(() => {
     const init = async () => {
+      const { dispatch } = store;
+      await dispatch(thunkFetchConfiguration());
       // …do multiple sync or async tasks
     };
 
