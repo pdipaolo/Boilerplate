@@ -6,10 +6,10 @@ import {
   type StackCardInterpolatedStyle,
 } from '@react-navigation/stack';
 
-import { introRoute } from '../../screens/Intro/route';
+import { loginRoute } from '../../screens/Login/route';
 
 type StackParamsList = {
-  [introRoute]: undefined;
+  [loginRoute]: undefined;
 };
 
 export {

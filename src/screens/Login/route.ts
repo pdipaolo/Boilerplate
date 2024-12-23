@@ -1,6 +1,6 @@
 import component from './';
 
-const name = 'Intro';
+const name = 'Login';
 
 const route = {
   name,
@@ -8,4 +8,4 @@ const route = {
 };
 
 export default route;
-export { name as introRoute };
+export { name as loginRoute };

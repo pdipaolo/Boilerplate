@@ -1,5 +1,5 @@
-import introRoute from '../../screens/Intro/route';
+import loginRoute from '../../screens/Login/route';
 
-const routes = [ introRoute];
+const routes = [loginRoute];
 
 export { routes };
