@@ -17,6 +17,7 @@ import { I18nextProvider } from 'react-i18next';
 import i18next from 'i18next';
 import { Loader } from './components/Loader';
 import BootSplash from './screens/BootSplash';
+import { RealmProvider } from './database';
 
 function App(): React.JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
@@ -35,23 +36,25 @@ function App(): React.JSX.Element {
   }, []);
 
   return (
-    <Provider store={store}>
-      <I18nextProvider i18n={i18next}>
-        <StatusBar
-          barStyle={isDarkMode ? 'light-content' : 'dark-content'}
-          backgroundColor={backgroundStyle.backgroundColor}
-        />
-        {bootSplashIsVisible && (
-        <BootSplash
-          onAnimationEnd={() => {
-            setBootSplashIsVisible(false);
-          }}
-        />
-      )}
-        <ApplicationNavigator />
-        <Loader />
-      </I18nextProvider>
-    </Provider>
+    <RealmProvider>
+      <Provider store={store}>
+        <I18nextProvider i18n={i18next}>
+          <StatusBar
+            barStyle={isDarkMode ? 'light-content' : 'dark-content'}
+            backgroundColor={backgroundStyle.backgroundColor}
+          />
+          {bootSplashIsVisible && (
+            <BootSplash
+              onAnimationEnd={() => {
+                setBootSplashIsVisible(false);
+              }}
+            />
+          )}
+          <ApplicationNavigator />
+          <Loader />
+        </I18nextProvider>
+      </Provider>
+    </RealmProvider>
   );
 }
 
