@@ -4,5 +4,9 @@
   "tab2": { "tabTitle": "Tab 2" },
   "tab3": { "tabTitle": "Tab 3" },
   "tab4": { "tabTitle": "Tab 4" },
-  "tab5": { "tabTitle": "Tab 5" }
+  "tab5": { "tabTitle": "Tab 5" },
+  "common": {
+    "update": "Update",
+    "cancel": "Cancel"
+  }
 }

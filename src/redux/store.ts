@@ -1,4 +1,5 @@
 import {configureStore} from '@reduxjs/toolkit';
+
 import loadingSlice from '../components/Loader/slices';
 import loginSlice from '../screens/Login/slices';
 import { api } from './services';

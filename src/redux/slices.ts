@@ -1,21 +1,18 @@
 import { createSlice } from '@reduxjs/toolkit'
 import { thunkFetchConfiguration } from './services';
-
-interface Config {
-  config: {
-    id: number
-  };
-}
+import { Config } from './types';
 
 const initialState = {
-  config: null
+  config: null,
 } satisfies Config as Config;
 
 const configSlice = createSlice({
   name: 'config',
   initialState,
   reducers: {
-
+    dismissAppUpdateModal: (state) => {
+      state.config.app_update = null;
+    },
   },
   extraReducers: (builder) => {
     builder.addCase(thunkFetchConfiguration.fulfilled, (state, { payload }) => {
@@ -26,4 +23,5 @@ const configSlice = createSlice({
     });
   }
 })
+export const { dismissAppUpdateModal } = configSlice.actions;
 export default configSlice.reducer;

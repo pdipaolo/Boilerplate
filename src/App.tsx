@@ -19,6 +19,7 @@ import { Loader } from './components/Loader';
 import BootSplash from './screens/BootSplash';
 import { RealmProvider } from './database';
 import { thunkFetchConfiguration } from './redux/services';
+import AppUpdateModal from './components/AppUpdateModal';
 
 function App(): React.JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
@@ -55,6 +56,7 @@ function App(): React.JSX.Element {
           )}
           <ApplicationNavigator />
           <Loader />
+          <AppUpdateModal />
         </I18nextProvider>
       </Provider>
     </RealmProvider>

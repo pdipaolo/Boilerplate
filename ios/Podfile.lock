@@ -1764,6 +1764,8 @@ PODS:
     - ReactCommon/turbomodule/bridging
     - ReactCommon/turbomodule/core
     - Yoga
+  - RNDeviceInfo (14.0.2):
+    - React-Core
   - RNFBApp (21.6.1):
     - Firebase/CoreOnly (= 11.5.0)
     - React-Core
@@ -2004,6 +2006,7 @@ DEPENDENCIES:
   - RealmJS (from `../node_modules/realm`)
   - RNBootSplash (from `../node_modules/react-native-bootsplash`)
   - "RNCAsyncStorage (from `../node_modules/@react-native-async-storage/async-storage`)"
+  - RNDeviceInfo (from `../node_modules/react-native-device-info`)
   - "RNFBApp (from `../node_modules/@react-native-firebase/app`)"
   - "RNFBRemoteConfig (from `../node_modules/@react-native-firebase/remote-config`)"
   - RNGestureHandler (from `../node_modules/react-native-gesture-handler`)
@@ -2170,6 +2173,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native-bootsplash"
   RNCAsyncStorage:
     :path: "../node_modules/@react-native-async-storage/async-storage"
+  RNDeviceInfo:
+    :path: "../node_modules/react-native-device-info"
   RNFBApp:
     :path: "../node_modules/@react-native-firebase/app"
   RNFBRemoteConfig:
@@ -2271,6 +2276,7 @@ SPEC CHECKSUMS:
   RealmJS: 054540707292206eadf069f110e79defb632a1b3
   RNBootSplash: ea9724d6f07a39bda1ea85c4376099385c5f7b31
   RNCAsyncStorage: 597673c6086d359029afefef8fd5859f1f35ab87
+  RNDeviceInfo: 3f2e5fcca3637f75c6d30ba287293c2f97206781
   RNFBApp: 1de631bffe154f4f8b56f8dbfb13d6305d658e97
   RNFBRemoteConfig: 9558ac5d11d4da5a36f939a5e3ca5652413d059e
   RNGestureHandler: 0e5ae8d72ef4afb855e98dcdbe60f27d938abe13

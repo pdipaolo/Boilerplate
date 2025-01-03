@@ -17,8 +17,11 @@ async function utilityRetriveConfiguration() {
   try {
     await syncConfiguration();
     const ID = remoteConfig().getValue('ID').asNumber();
+    const APP_UPDATE = remoteConfig().getValue('APP_UPDATE').asString();
+
     return {
       id: ID,
+      app_update: JSON.parse(APP_UPDATE).TYPE === 0 ? null : APP_UPDATE,
     }
   } catch (error) {
     console.error('[utilityRetriveConfiguration] error:', error);
