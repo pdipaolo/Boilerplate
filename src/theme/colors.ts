@@ -6,7 +6,8 @@ const lightGreen = '#BFD630' as '#BFD630';
 const green = '#0E8669' as '#0E8669';
 const red = '#E63238' as '#E63238';
 const yellow = '#FFF2CC';
-
+const transparent = 'transparent' as 'transparent';
+const ripple = 'rgba(0, 0, 0, 0.2)' as 'rgba(0, 0, 0, 0.2)';
 
 const palette = {
   primary: {
@@ -30,6 +31,8 @@ const palette = {
     black,
     red,
     yellow,
+    transparent,
+    ripple,
   },
   grey: {
     50: '#FAFAFA' as '#FAFAFA',
