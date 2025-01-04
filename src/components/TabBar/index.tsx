@@ -4,12 +4,13 @@ import { View, Pressable } from 'react-native';
 
 import { type BottomTabBarProps } from '../../navigators/HomeTabs/types';
 import theme from '../../theme';
-import Icon from '../Icon';
-import { ICON_MODE } from '../Icon/constants';
-import Text from '../Text';
+
 
 import { TAB_ITEM } from './costants';
 import { styles } from './styles';
+import Icon from '../../ui/Icon';
+import { ICON_MODE } from '../../ui/Icon/constants';
+import Text from '../../ui/Text';
 
 function TabBar(props: BottomTabBarProps): JSX.Element {
   const { state, navigation } = props;
