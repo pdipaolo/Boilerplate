@@ -1,1 +1,1 @@
-export {default as example} from './example.json';
+export {default as example} from './it.json';

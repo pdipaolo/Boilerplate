@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Pressable } from 'react-native';
 
-import { useNavigation } from '../../navigators/Stack/hooks';
+import { useNavigation } from '../../navigators/RootStack/hooks';
 import Icon from '../Icon';
 import { ICON } from '../Icon/constants';
 

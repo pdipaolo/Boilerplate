@@ -1,0 +1,12 @@
+{
+  "helloUser": "Ciao, il mio nome è {{name}}",
+  "tab1": { "tabTitle": "Tab 1 ita" },
+  "tab2": { "tabTitle": "Tab 2" },
+  "tab3": { "tabTitle": "Tab 3" },
+  "tab4": { "tabTitle": "Tab 4" },
+  "tab5": { "tabTitle": "Tab 5" },
+  "common": {
+    "update": "Aggiorna",
+    "cancel": "Annulla"
+  }
+}

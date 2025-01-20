@@ -4,7 +4,7 @@ import tab2Route from '../../screens/Tab2/route';
 import tab3Route from '../../screens/Tab3/route';
 import tab4Route from '../../screens/Tab4/route';
 import tab5Route from '../../screens/Tab5/route';
-import { BOTTOM_NAV_ICON } from '../Icon/constants';
+import { BOTTOM_NAV_ICON } from '../../ui/Icon/constants';
 
 const TAB_ITEM = {
   [tab1Route.name]: {
