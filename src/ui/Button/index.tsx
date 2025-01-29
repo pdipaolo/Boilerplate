@@ -62,7 +62,7 @@ function Button({
   }));
 
   const handlePress = () => {
-    !isRippleDisabled && startRipple();
+    type !== ButtonType.outlined && !isRippleDisabled && startRipple();
     onPress();
   };
 

@@ -6,7 +6,7 @@ import { styles } from './styles';
 import { type PropsTypes } from './types';
 
 function SafeAreaView(props: PropsTypes): JSX.Element {
-  const { edges, style: passedStyle, children } = props;
+  const { edges = ['right', 'left'], style: passedStyle, children } = props;
   return (
     <RNSafeAreaView style={[styles.safeArea, passedStyle]} edges={edges}>
       {children}

@@ -8,6 +8,7 @@ const red = '#E63238' as '#E63238';
 const yellow = '#FFF2CC';
 const transparent = 'transparent' as 'transparent';
 const ripple = 'rgba(0, 0, 0, 0.2)' as 'rgba(0, 0, 0, 0.2)';
+const boxShadow = '0 2 4 rgba(100, 100, 100, 0.25)' as '0 2 4 rgba(100, 100, 100, 0.25)';
 
 const palette = {
   primary: {
@@ -52,6 +53,7 @@ const palette = {
   text: {
     primary: darkestGrey,
   },
+  boxShadow: boxShadow
 };
 
 export { palette };

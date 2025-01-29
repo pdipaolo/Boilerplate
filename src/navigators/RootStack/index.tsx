@@ -1,24 +1,15 @@
 import React from 'react';
 
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import HomeTabs from '../HomeTabs';
 import { routes } from './constants';
-import { useAppSelector } from '../../redux';
-import { RootState } from '../../redux/store';
+import { createStackNavigator } from '@react-navigation/stack';
 
-const Stack = createNativeStackNavigator();
-
+const Stack = createStackNavigator();
+const StackScreen = Stack.Screen;
 function RootStack(): JSX.Element {
-  const isLoggedIn = useAppSelector(
-    (state: RootState) => state.login.isLoggedIn,
-  );
 
   return (
     <Stack.Navigator >
-      {!isLoggedIn ?
-        routes.map((route) => (<Stack.Screen key={route.name} {...route} />)) :
-        <Stack.Screen name="Home" component={HomeTabs} options={{ headerShown: false }} />
-      }
+      {routes.map((route) => (<StackScreen key={route.name} {...route} />)) }
     </Stack.Navigator>
   );
 }

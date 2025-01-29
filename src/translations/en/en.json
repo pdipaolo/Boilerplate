@@ -8,5 +8,32 @@
   "common": {
     "update": "Update",
     "cancel": "Cancel"
+  },
+  "screens": {
+    "login": {
+      "submit": "Login",
+      "createAccount": "Create an account",
+      "placeholder_mail": "Insert mail",
+      "placeholder_password": "Insert password"
+    },
+    "createAccount": {
+      "submit": "Create account",
+      "goback": "Step back",
+      "placeholder_email": "Email",
+      "placeholder_password": "Insert password",
+      "placeholder_confirmPassword": "Confirm password",
+      "placeholder_name": "Name",
+      "placeholder_lastname": "Lastname",
+      "placeholder_city": "City",
+      "placeholder_address": "Address"
+    }
+  },
+  "ui": {
+    "textInput": {
+      "error_required": "This field is required",
+      "error_email": "Invalid email",
+      "error_password": "Password must be at least 6 characters long",
+      "error_match23": "Passwords do not match"
+    }
   }
 }
