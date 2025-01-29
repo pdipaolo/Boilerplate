@@ -1,4 +1,4 @@
-type FormType = {
+type UserType = {
   email: string | null,
   password: string | null,
   confirmPassword: string | null,
@@ -8,4 +8,4 @@ type FormType = {
   address: string | null,
 };
 
-export { type FormType};
+export { type UserType};

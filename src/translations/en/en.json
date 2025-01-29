@@ -33,7 +33,7 @@
       "error_required": "This field is required",
       "error_email": "Invalid email",
       "error_password": "Password must be at least 6 characters long",
-      "error_confirmPassword": "Passwords do not match"
+      "error_match23": "Passwords do not match"
     }
   }
 }

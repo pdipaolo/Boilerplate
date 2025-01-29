@@ -1,10 +1,6 @@
 import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
-  scrollview: {
-    height: '100%',
-    justifyContent: 'center'
-  },
   submit: {
     marginTop: 20,
     justifyContent: 'center',

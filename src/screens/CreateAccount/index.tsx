@@ -3,16 +3,20 @@ import { KeyboardAvoidingView, ScrollView } from 'react-native';
 import { styles } from './styles';
 import SafeAreaView from '../../components/SafeAreaView';
 import { useNavigation } from '../../navigators/RootStack/hooks';
-import { type FormType } from './types';
+import { type UserType } from './types';
 import TextInput from '../../ui/TextInput';
 import { palette } from '../../theme/colors';
 import { translate } from '../../translations/translate';
 import Button, { ButtonType } from '../../ui/Button';
 import { TextInputError } from '../../ui/TextInput/types';
+import { useAppDispatch } from '../../redux';
+import { thunkCreateAccount } from '../Login/services';
 
 function CreateAccount(): JSX.Element {
   const navigation = useNavigation();
-  const [form, setForm] = useState<FormType>({
+  const dispatch = useAppDispatch();
+
+  const [user, setUser] = useState<UserType>({
     email: null,
     password: null,
     confirmPassword: null,
@@ -24,29 +28,29 @@ function CreateAccount(): JSX.Element {
 
   const isButtonEnabled = () => {
     const isFormValid = () => {
-      return Object.values(form).every(value => value !== '' && value !== null);
+      return Object.values(user).every(value => value !== '' && value !== null);
     };
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return isFormValid() && emailRegex.test(form.email) && form.password.length > 5 && form.password === form.confirmPassword;
+    return isFormValid() && emailRegex.test(user.email) && user.password.length > 5 && user.password === user.confirmPassword;
   };
 
-  const handleCreateAccount = () => {
-    console.log('handleCreateAccount', form);
+  const handleCreateAccount = async () => {
+    dispatch(thunkCreateAccount({user: user, navigation}))
   };
 
   const error = (key: string) => {
-    if (form[key] === '' || form[key] === null) {
+    if (user[key] === '' || user[key] === null) {
       return TextInputError.required;
     };
 
     if (key === 'email') {
       const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-      if (!emailRegex.test(form.email)) {
+      if (!emailRegex.test(user.email)) {
         return TextInputError.email;
       }
     }
     if (key === 'confirmPassword') {
-      if (form.password !== form.confirmPassword) {
+      if (user.password !== user.confirmPassword) {
         return TextInputError.match;
       }
     }
@@ -57,13 +61,14 @@ function CreateAccount(): JSX.Element {
     <SafeAreaView>
       <KeyboardAvoidingView behavior="padding">
         <ScrollView
+          showsVerticalScrollIndicator={false}
           keyboardShouldPersistTaps="handled"
         >
-          {Object.keys(form).map((key) =>
+          {Object.keys(user).map((key) =>
             <TextInput
               containerStyle={styles.textInput}
               key={key}
-              onChangeText={(text) => setForm((prev) => ({ ...prev, [key]: text }))}
+              onChangeText={(text) => setUser((prev) => ({ ...prev, [key]: text }))}
               placeholder={translate('screens.createAccount.placeholder', { context: key })}
               placeholderTextColor={palette.common.black}
               error={error(key)}

@@ -17,7 +17,7 @@ const styles = StyleSheet.create({
 
   },
   textInput: {
-    width: '100%',
+    width: '90%',
     height: '100%',
   },
   error: {

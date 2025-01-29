@@ -51,7 +51,7 @@ function Login() {
     <SafeAreaView>
       <KeyboardAvoidingView behavior="padding">
         <ScrollView
-          contentContainerStyle={styles.scrollview}
+          showsVerticalScrollIndicator={false}
           keyboardShouldPersistTaps="handled"
         >
           <TextInput

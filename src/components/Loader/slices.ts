@@ -1,7 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit';
 
 import { PropsTypes } from './types';
-import { thunkLogin } from '../../screens/Login/services';
+import { thunkCreateAccount, thunkLogin } from '../../screens/Login/services';
 
 const initialState: PropsTypes = {
   isLoading: false,
@@ -26,6 +26,15 @@ const loadingSlice = createSlice({
       state.isLoading = false;
     });
     builder.addCase(thunkLogin.rejected, (state) => {
+      state.isLoading = false;
+    });
+    builder.addCase(thunkCreateAccount.pending, (state) => {
+      state.isLoading = true;
+    });
+    builder.addCase(thunkCreateAccount.fulfilled, (state) => {
+      state.isLoading = false;
+    });
+    builder.addCase(thunkCreateAccount.rejected, (state) => {
       state.isLoading = false;
     });
   },

@@ -33,7 +33,7 @@
       "error_required": "Campo obbligatorio",
       "error_email": "Email non valida",
       "error_password": "La password deve essere lunga almeno 6 caratteri",
-      "error_confirmPassword": "Le password non corrispondono"
+      "error_match": "Le password non corrispondono"
     }
   }
 }
