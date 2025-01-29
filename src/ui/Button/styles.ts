@@ -17,6 +17,8 @@ const styles = (color?: string, textColor?: string) => StyleSheet.create({
     fontFamily: theme.typography.fontFamily.bold,
     fontSize: theme.typography.fontSize.m,
     textAlign: 'center',
+    lineHeight: 18,
+    height: 18,
   },
   text: {
     backgroundColor: theme.palette.common.transparent,
@@ -24,7 +26,6 @@ const styles = (color?: string, textColor?: string) => StyleSheet.create({
   outlined: {
     textDecorationLine: 'underline',
     textDecorationStyle: 'solid',
-    lineHeight: 18,
   },
   elevation: {
     shadowColor: theme.palette.common.black,

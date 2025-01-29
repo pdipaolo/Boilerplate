@@ -7,9 +7,11 @@ import {
 } from '@react-navigation/stack';
 
 import { loginRoute } from '../../screens/Login/route';
+import { createAccountRoute } from '../../screens/CreateAccount/route';
 
 type StackParamsList = {
   [loginRoute]: undefined;
+  [createAccountRoute]: undefined;
 };
 
 export {

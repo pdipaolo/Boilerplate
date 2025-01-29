@@ -8,5 +8,32 @@
   "common": {
     "update": "Aggiorna",
     "cancel": "Annulla"
+  },
+  "screens": {
+    "login": {
+      "submit": "Accedi",
+      "createAccount": "Crea un account",
+      "placeholder_mail": "Inserisci la tua email",
+      "placeholder_password": "Inserisci la tua password"
+    },
+    "createAccount": {
+      "submit": "Crea account",
+      "goback": "Indietro",
+      "placeholder_email": "Email",
+      "placeholder_password": "Inserisci password",
+      "placeholder_confirmPassword": "Conferma password",
+      "placeholder_name": "Nome",
+      "placeholder_lastname": "Cognome",
+      "placeholder_city": "Città",
+      "placeholder_address": "Indirizzo"
+    }
+  },
+  "ui": {
+    "textInput": {
+      "error_required": "Campo obbligatorio",
+      "error_email": "Email non valida",
+      "error_password": "La password deve essere lunga almeno 6 caratteri",
+      "error_confirmPassword": "Le password non corrispondono"
+    }
   }
 }

@@ -6,9 +6,9 @@ import { type PropsTypes } from './types';
 
 const selectorGlobal = (state: RootState) => state.login;
 
-const selectorLoading = createSelector(
+const selectorUser = createSelector(
   selectorGlobal,
-  (substate: PropsTypes) => substate.isLoggedIn,
+  (substate: PropsTypes) => substate.user,
 );
 
-export { selectorLoading };
+export { selectorUser };

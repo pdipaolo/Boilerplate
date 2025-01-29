@@ -15,6 +15,10 @@ import Tab4OutlinedIcon from '../../assets/svg/chevron-left.svg';
 import Tab5FilledIcon from '../../assets/svg/chevron-left.svg';
 import Tab5OutlinedIcon from '../../assets/svg/chevron-left.svg';
 
+import EyeOffIcon from '../../assets/svg/eye-off.svg';
+import EyeOnIcon from '../../assets/svg/eye-on.svg';
+import CloseIcon from '../../assets/svg/close.svg';
+
 const ICON_MODE = {
   FILLED: 'filled' as 'filled',
   OUTLINED: 'outlined' as 'outlined',
@@ -31,6 +35,10 @@ const BOTTOM_NAV_ICON = {
 const ICON = {
   // General
   CHEVRON_LEFT: 'chevron-left' as 'chevron-left',
+  EYE_OFF: 'eye-off' as 'eye-off',
+  EYE_ON: 'eye-on' as 'eye-on',
+  CLOSE: 'close' as 'close',
+
   // Tab
   TAB1_FILLED:
     `${BOTTOM_NAV_ICON.TAB1}-${ICON_MODE.FILLED}` as `${typeof BOTTOM_NAV_ICON.TAB1}-${typeof ICON_MODE.FILLED}`,
@@ -59,6 +67,18 @@ const ICON_COMPONENT = {
   CHEVRON_LEFT: {
     ID: ICON.CHEVRON_LEFT,
     COMPONENT: (props: SvgProps) => <ChevronLeftIcon {...props} />,
+  },
+  EYE_OFF: {
+    ID: ICON.EYE_OFF,
+    COMPONENT: (props: SvgProps) => <EyeOffIcon {...props} />,
+  },
+  EYE_ON: {
+    ID: ICON.EYE_ON,
+    COMPONENT: (props: SvgProps) => <EyeOnIcon {...props} />,
+  },
+  CLOSE: {
+    ID: ICON.CLOSE,
+    COMPONENT: (props: SvgProps) => <CloseIcon {...props} />,
   },
   // Tab
   TAB1_FILLED: {
