@@ -3,7 +3,6 @@ import { createAsyncThunk } from '@reduxjs/toolkit';
 import { Alert } from 'react-native';
 import { UserType } from '../CreateAccount/types';
 import { DB } from '../../database';
-import { tab1Route } from '../Tab1/route';
 
 const thunkLogin = createAsyncThunk(
   'login/thunkLogin',
@@ -38,7 +37,7 @@ const thunkCreateAccount = createAsyncThunk(
         createdAt: new Date().toISOString()
       }).then(() => {
         Alert.alert('Success', 'Account created');
-        navigation.navigate(tab1Route);
+        navigation.popToTop();
         return true;
       })
       .catch((error) => {
