@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import SafeAreaView from '../../components/SafeAreaView';
 import TextInput from '../../ui/TextInput';
 import { translate } from '../../translations/translate';
@@ -7,8 +7,7 @@ import styles from './styles';
 import { KeyboardAvoidingView, ScrollView } from 'react-native';
 import { thunkLogin } from './services';
 
-import { useAppDispatch, useAppSelector } from '../../redux';
-import { RootState } from '../../redux/store';
+import { useAppDispatch } from '../../redux';
 import { palette } from '../../theme/colors';
 import { ICON } from '../../ui/Icon/constants';
 import { useNavigation } from '../../navigators/RootStack/hooks';
@@ -28,15 +27,6 @@ function Login() {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailRegex.test(email) && password.length > 5;
   };
-  const user = useAppSelector(
-    (state: RootState) => state.login.user,
-  ); 
-
-  useEffect(() => {
-    if (user) {
-      console.log('User:', user);
-    }
-  }, [user]);
 
   const handleLogin = () => {
     dispatch(thunkLogin({email, password}));

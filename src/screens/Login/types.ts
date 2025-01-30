@@ -6,6 +6,7 @@ type UserType = {
   email: string;
   displayName?: string;
   name: string;
+  lastname: string;
   city: string;
   address: string;
   uid: string;

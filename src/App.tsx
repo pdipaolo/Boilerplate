@@ -17,12 +17,10 @@ import { I18nextProvider } from 'react-i18next';
 import i18next from 'i18next';
 import { Loader } from './components/Loader';
 import BootSplash from './screens/BootSplash';
-import { DB, RealmProvider } from './database';
-import { thunkFetchConfiguration } from './redux/services';
+import { RealmProvider } from './database';
+import { thunkFetchConfiguration, thunkUpdateUser } from './redux/services';
 import AppUpdateModal from './components/AppUpdateModal';
 import auth, { FirebaseAuthTypes } from '@react-native-firebase/auth';
-import { setUser } from './screens/Login/slices';
-import { UserType } from './screens/Login/types';
 
 function App(): React.JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
@@ -44,30 +42,7 @@ function App(): React.JSX.Element {
   // Handle user state changes
   async function onAuthStateChanged(user: FirebaseAuthTypes.User | null) {
     const { dispatch } = store;
-    if (!user) {
-      dispatch(setUser(null));
-      return;
-    }
-    try {
-      const reference = DB.ref(`users/${user.uid}`);
-      reference.on('value', (snapshot) => {
-        const data = snapshot.val();
-        if (data) {
-          const { name, city, address } = data;
-          const newUser: UserType = {
-            email: user.email,
-            displayName: data.name,
-            name,
-            city,
-            address,
-            uid: user.uid,
-          };
-          dispatch(setUser(newUser));
-        }
-      });
-    } catch (error) {
-      console.error('Error fetching user data:', error);
-    }
+    dispatch(thunkUpdateUser(user));
   }
 
   useEffect(() => {
@@ -76,26 +51,26 @@ function App(): React.JSX.Element {
   }, []);
 
   return (
-    <RealmProvider>
-      <Provider store={store}>
-        <I18nextProvider i18n={i18next}>
-          <StatusBar
-            barStyle={isDarkMode ? 'light-content' : 'dark-content'}
-            backgroundColor={backgroundStyle.backgroundColor}
-          />
-          {bootSplashIsVisible && (
-            <BootSplash
-              onAnimationEnd={() => {
-                setBootSplashIsVisible(false);
-              }}
+      <RealmProvider>
+        <Provider store={store}>
+          <I18nextProvider i18n={i18next}>
+            <StatusBar
+              barStyle={isDarkMode ? 'light-content' : 'dark-content'}
+              backgroundColor={backgroundStyle.backgroundColor}
             />
-          )}
-          <ApplicationNavigator />
-          <Loader />
-          <AppUpdateModal />
-        </I18nextProvider>
-      </Provider>
-    </RealmProvider>
+            {bootSplashIsVisible && (
+              <BootSplash
+                onAnimationEnd={() => {
+                  setBootSplashIsVisible(false);
+                }}
+              />
+            )}
+            <ApplicationNavigator />
+            <Loader />
+            <AppUpdateModal />
+          </I18nextProvider>
+        </Provider>
+      </RealmProvider>
   );
 }
 
