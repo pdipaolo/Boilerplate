@@ -13,6 +13,7 @@
     "login": {
       "submit": "Login",
       "createAccount": "Create an account",
+      "forgotPassword": "Forgot password?",
       "placeholder_mail": "Insert mail",
       "placeholder_password": "Insert password"
     },

@@ -6,7 +6,7 @@ const styles = (color?: string, textColor?: string) => StyleSheet.create({
   button: {
     backgroundColor: color || theme.palette.primary.main,
     borderRadius: 8,
-    padding: 12,
+    paddingHorizontal: 12,
     flexDirection: 'row',
     alignItems: 'center',
     gap: 8,
@@ -17,8 +17,7 @@ const styles = (color?: string, textColor?: string) => StyleSheet.create({
     fontFamily: theme.typography.fontFamily.bold,
     fontSize: theme.typography.fontSize.m,
     textAlign: 'center',
-    lineHeight: 18,
-    height: 18,
+    width: '100%'
   },
   text: {
     backgroundColor: theme.palette.common.transparent,

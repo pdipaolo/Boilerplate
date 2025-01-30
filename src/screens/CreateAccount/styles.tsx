@@ -19,7 +19,6 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     height: 40,
     width: 300,
-    backgroundColor: 'red',
     alignSelf: 'center',
     lineHeight: 40,
   }

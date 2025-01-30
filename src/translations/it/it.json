@@ -13,6 +13,7 @@
     "login": {
       "submit": "Accedi",
       "createAccount": "Crea un account",
+      "forgotPassword": "Password dimenticata?",
       "placeholder_mail": "Inserisci la tua email",
       "placeholder_password": "Inserisci la tua password"
     },

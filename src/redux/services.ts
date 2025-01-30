@@ -25,6 +25,9 @@ const thunkUpdateUser = createAsyncThunk(
       }
       const reference = DB.ref(`users/${user.uid}`);
       const data = (await reference.once('value')).val();
+      if (!data) {
+        return{ email: user.email, uid: user.uid };
+      }
       const { email, displayName, name,lastname, city, address } = data;
       return {
         email: email,

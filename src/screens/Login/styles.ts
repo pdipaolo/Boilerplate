@@ -9,11 +9,10 @@ const styles = StyleSheet.create({
     alignSelf: 'center'
   },
   createAccount: {
-    marginTop: 20,
-    justifyContent: 'center',
+    marginTop: 8,
     height: 40,
-    width: 140,
-    alignSelf: 'center'
+    width: 200,
+    alignSelf: 'center',
   },
   textInput: {
     marginTop: 20,

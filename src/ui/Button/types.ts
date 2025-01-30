@@ -1,5 +1,5 @@
 import React from "react";
-import { ViewStyle } from "react-native";
+import { TextStyle, ViewStyle } from "react-native";
 import { ICON } from "../Icon/constants";
 
 enum ButtonType {
@@ -11,6 +11,7 @@ enum ButtonType {
 
 type PropsTypes = {
   style?: ViewStyle;
+  textStyle?: TextStyle;
   type?: ButtonType;
   color?: string;
   textColor?: string;

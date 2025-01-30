@@ -4,7 +4,7 @@ import TextInput from '../../ui/TextInput';
 import { translate } from '../../translations/translate';
 import Button, { ButtonType } from '../../ui/Button';
 import styles from './styles';
-import { KeyboardAvoidingView, ScrollView } from 'react-native';
+import { Alert, KeyboardAvoidingView, ScrollView } from 'react-native';
 import { thunkLogin } from './services';
 
 import { useAppDispatch } from '../../redux';
@@ -12,6 +12,7 @@ import { palette } from '../../theme/colors';
 import { ICON } from '../../ui/Icon/constants';
 import { useNavigation } from '../../navigators/RootStack/hooks';
 import { createAccountRoute } from '../CreateAccount/route';
+import auth from '@react-native-firebase/auth';
 
 function Login() {
   const dispatch = useAppDispatch();
@@ -19,14 +20,8 @@ function Login() {
   const [email, setMail] = useState<null | string>('');
   const [password, setPassword] = useState<null | string>('');
   const [isPasswordVisible, setPasswordVisible] = useState(false);
-
-  const isButtonEnabled = () => {
-    if (!email || !password) {
-      return false;
-    };
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return emailRegex.test(email) && password.length > 5;
-  };
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  const isEmailValid = emailRegex.test(email);
 
   const handleLogin = () => {
     dispatch(thunkLogin({email, password}));
@@ -34,7 +29,14 @@ function Login() {
 
   const handleCreateAccount = () => {
     navigate(createAccountRoute);
-    console.log('handleCreateAccount');
+  };
+
+  const handleForgotPassword = () => {
+    auth().sendPasswordResetEmail(email).then(() => {
+      Alert.alert('Password reset email sent');
+    }).catch((error) => {
+      Alert.alert(error.message);
+    });
   };
 
   return (
@@ -61,7 +63,7 @@ function Login() {
           />
           <Button
             style={styles.submit}
-            isDisabled={!isButtonEnabled()}
+            isDisabled={!isEmailValid && password.length <= 5}
             onPress={handleLogin}
           >
             {translate('screens.login.submit')}
@@ -72,6 +74,14 @@ function Login() {
             onPress={handleCreateAccount}
           >
             {translate('screens.login.createAccount')}
+          </Button>
+          <Button
+            style={styles.createAccount}
+            type={ButtonType.outlined}
+            isDisabled={!isEmailValid}
+            onPress={handleForgotPassword}
+          >
+            {translate('screens.login.forgotPassword')}
           </Button>
         </ScrollView>
       </KeyboardAvoidingView>
