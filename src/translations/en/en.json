@@ -9,6 +9,28 @@
     "update": "Update",
     "cancel": "Cancel"
   },
+  "components": {
+    "errorBoundary": {
+      "close": "OK",
+      "description": "An error occurred!",
+      "title": "Ops!",
+      "description_default": "An error occurred!",
+      "title_default": "Ops!",
+      "description_auth/invalid-credential": "Your credentials are invalid",
+      "title_auth/invalid-credential": "Ops!",
+      "description_auth/user-not-found": "User not found in the database",
+      "title_auth/user-not-foundl": "Ops!",
+      "description_auth/wrong-password": "Your password is wrong",
+      "title_auth/wrong-password": "Ops!",
+      "description_auth/invalid-email": "Your email is invalid",
+      "title_auth/invalid-email": "Ops!",
+      "description_auth/email-already-in-use": "Email already in use",
+      "title_auth/email-already-in-use": "Ops!"
+    },
+    "snackbar": {
+      "title_default": "Something went wrong"
+    }
+  },
   "screens": {
     "login": {
       "submit": "Login",

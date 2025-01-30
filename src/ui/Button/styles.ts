@@ -15,9 +15,11 @@ const styles = (color?: string, textColor?: string) => StyleSheet.create({
   textWrapper: {
     color: textColor || theme.palette.common.black,
     fontFamily: theme.typography.fontFamily.bold,
-    fontSize: theme.typography.fontSize.m,
+    fontSize: theme.typography.fontSize.l,
     textAlign: 'center',
-    width: '100%'
+    width: '100%',
+    height: 22,
+    lineHeight: 19,
   },
   text: {
     backgroundColor: theme.palette.common.transparent,

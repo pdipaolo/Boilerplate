@@ -16,11 +16,13 @@ import { store } from './redux';
 import { I18nextProvider } from 'react-i18next';
 import i18next from 'i18next';
 import { Loader } from './components/Loader';
+import {ErrorBoundary}  from './components/ErrorBoundary';
 import BootSplash from './screens/BootSplash';
 import { RealmProvider } from './database';
 import { thunkFetchConfiguration, thunkUpdateUser } from './redux/services';
 import AppUpdateModal from './components/AppUpdateModal';
 import auth, { FirebaseAuthTypes } from '@react-native-firebase/auth';
+import { Snackbar } from './components/Snackbar';
 
 function App(): React.JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
@@ -67,6 +69,8 @@ function App(): React.JSX.Element {
             )}
             <ApplicationNavigator />
             <Loader />
+            <ErrorBoundary />
+            <Snackbar />
             <AppUpdateModal />
           </I18nextProvider>
         </Provider>
