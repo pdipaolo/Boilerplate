@@ -1,15 +1,16 @@
 {
   "project_info": {
     "project_number": "87974211047",
+    "firebase_url": "https://boilerplate-react-native-c91b4-default-rtdb.europe-west1.firebasedatabase.app",
     "project_id": "boilerplate-react-native-c91b4",
     "storage_bucket": "boilerplate-react-native-c91b4.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:87974211047:android:d5b2eeca1b6f12957b2142",
+        "mobilesdk_app_id": "1:87974211047:android:afa726d3d217383f7b2142",
         "android_client_info": {
-          "package_name": "com.boilerplate"
+          "package_name": "com.boilerplate.dev"
         }
       },
       "oauth_client": [],

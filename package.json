@@ -4,6 +4,8 @@
   "private": true,
   "scripts": {
     "android": "react-native run-android",
+    "android --mode=dev": "react-native run-android --mode=devDebug",
+    "android --mode=prod": "react-native run-android --mode=prodRelease",
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest"
