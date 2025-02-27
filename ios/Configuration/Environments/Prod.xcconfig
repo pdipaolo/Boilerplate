@@ -1,0 +1,10 @@
+//
+//  Default.xcconfig
+//  Boilerplate
+//
+//  Created by dipaolo on 27/02/25.
+//
+
+#include "Default.xcconfig"
+
+INCLUDED_SOURCE_FILE_NAMES = */Resources/Prod/*
