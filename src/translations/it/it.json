@@ -8,5 +8,55 @@
   "common": {
     "update": "Aggiorna",
     "cancel": "Annulla"
+  },
+  "components": {
+    "errorBoundary": {
+      "close": "OK",
+      "description": "Si è verificato un errore!",
+      "title": "Ops!",
+      "description_default": "Si è verificato un errore!",
+      "title_default": "Ops!",
+      "description_auth/invalid-credential": "Credenziali non valide",
+      "title_auth/invalid-credential": "Ops",
+      "description_auth/user-not-found": "Utente non trovato nel database",
+      "title_auth/user-not-foundl": "Ops!",
+      "description_auth/wrong-password": "La tua password è sbagliata",
+      "title_auth/wrong-password": "Ops!",
+      "description_auth/invalid-email": "La tua email non è valida",
+      "title_auth/invalid-email": "Ops!",
+      "description_auth/email-already-in-use": "Email already in use",
+      "title_auth/email-already-in-use": "Ops!"
+    },
+    "snackbar": {
+      "title_default": "Qualcosa è andato storto"
+    }
+  },
+  "screens": {
+    "login": {
+      "submit": "Accedi",
+      "createAccount": "Crea un account",
+      "forgotPassword": "Password dimenticata?",
+      "placeholder_mail": "Inserisci la tua email",
+      "placeholder_password": "Inserisci la tua password"
+    },
+    "createAccount": {
+      "submit": "Crea account",
+      "goback": "Indietro",
+      "placeholder_email": "Email",
+      "placeholder_password": "Inserisci password",
+      "placeholder_confirmPassword": "Conferma password",
+      "placeholder_name": "Nome",
+      "placeholder_lastname": "Cognome",
+      "placeholder_city": "Città",
+      "placeholder_address": "Indirizzo"
+    }
+  },
+  "ui": {
+    "textInput": {
+      "error_required": "Campo obbligatorio",
+      "error_email": "Email non valida",
+      "error_password": "La password deve essere lunga almeno 6 caratteri",
+      "error_match": "Le password non corrispondono"
+    }
   }
 }

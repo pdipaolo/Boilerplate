@@ -1,7 +1,9 @@
 import {configureStore} from '@reduxjs/toolkit';
 
 import loadingSlice from '../components/Loader/slices';
+import errorSlice from '../components/ErrorBoundary/slices';
 import loginSlice from '../screens/Login/slices';
+import snackbarSlice from '../components/Snackbar/slices';
 import { api } from './services';
 import configSlice  from './slices';
 
@@ -10,6 +12,8 @@ const createStore = () => {
     reducer: {
       login: loginSlice,
       loading: loadingSlice,
+      error: errorSlice,
+      snackbar: snackbarSlice,
       config: configSlice,
       [api.reducerPath]: api.reducer,
     },

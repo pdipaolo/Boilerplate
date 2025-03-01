@@ -79,6 +79,14 @@ android {
     compileSdk rootProject.ext.compileSdkVersion
 
     namespace "com.boilerplate"
+    flavorDimensions "default"
+    productFlavors {
+        dev {
+            applicationIdSuffix ".dev"
+            versionNameSuffix "-dev"
+        }
+        prod { }
+    }
     defaultConfig {
         applicationId "com.boilerplate"
         minSdkVersion rootProject.ext.minSdkVersion

@@ -10,7 +10,8 @@ function Text(props: PropsTypes): JSX.Element {
   return (
     <RNText
       style={[styles.text, propStyles]}
-      adjustsFontSizeToFit={true}
+      adjustsFontSizeToFit={false}
+      allowFontScaling={false}
       onPress={onPress}
     >
       {children}

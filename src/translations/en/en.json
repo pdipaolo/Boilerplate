@@ -8,5 +8,55 @@
   "common": {
     "update": "Update",
     "cancel": "Cancel"
+  },
+  "components": {
+    "errorBoundary": {
+      "close": "OK",
+      "description": "An error occurred!",
+      "title": "Ops!",
+      "description_default": "An error occurred!",
+      "title_default": "Ops!",
+      "description_auth/invalid-credential": "Your credentials are invalid",
+      "title_auth/invalid-credential": "Ops!",
+      "description_auth/user-not-found": "User not found in the database",
+      "title_auth/user-not-foundl": "Ops!",
+      "description_auth/wrong-password": "Your password is wrong",
+      "title_auth/wrong-password": "Ops!",
+      "description_auth/invalid-email": "Your email is invalid",
+      "title_auth/invalid-email": "Ops!",
+      "description_auth/email-already-in-use": "Email already in use",
+      "title_auth/email-already-in-use": "Ops!"
+    },
+    "snackbar": {
+      "title_default": "Something went wrong"
+    }
+  },
+  "screens": {
+    "login": {
+      "submit": "Login",
+      "createAccount": "Create an account",
+      "forgotPassword": "Forgot password?",
+      "placeholder_mail": "Insert mail",
+      "placeholder_password": "Insert password"
+    },
+    "createAccount": {
+      "submit": "Create account",
+      "goback": "Step back",
+      "placeholder_email": "Email",
+      "placeholder_password": "Insert password",
+      "placeholder_confirmPassword": "Confirm password",
+      "placeholder_name": "Name",
+      "placeholder_lastname": "Lastname",
+      "placeholder_city": "City",
+      "placeholder_address": "Address"
+    }
+  },
+  "ui": {
+    "textInput": {
+      "error_required": "This field is required",
+      "error_email": "Invalid email",
+      "error_password": "Password must be at least 6 characters long",
+      "error_match23": "Passwords do not match"
+    }
   }
 }

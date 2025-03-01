@@ -1,21 +1,26 @@
 import { createSlice } from '@reduxjs/toolkit';
 
 import { PropsTypes } from './types';
+import { thunkUpdateUser } from '../../redux/services';
 
 const initialState: PropsTypes = {
-  isLoggedIn: true,
+  user: null,
 };
 
 const loginSlice = createSlice({
-  name: 'loading',
+  name: 'login',
   initialState,
   reducers: {
-    setLoggedIn: (state, { payload }) => {
-      state.isLoggedIn = payload;
-    },
+    setUser: (state, { payload }) => {
+      state.user = payload;
+    }
   },
-  extraReducers: (builder) => {},
+  extraReducers: (builder) => {
+    builder.addCase(thunkUpdateUser.fulfilled, (state, { payload }) => {
+      state.user = payload;
+    });
+  },
 });
 
-export const { setLoggedIn } = loginSlice.actions;
+export const { setUser } = loginSlice.actions;
 export default loginSlice.reducer;

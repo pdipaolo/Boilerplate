@@ -1,0 +1,8 @@
+//
+//  Default.xcconfig
+//  Boilerplate
+//
+//  Created by dipaolo on 27/02/25.
+//
+#include "Pods/Target Support Files/Pods-Boilerplate/Pods-Boilerplate.debug.xcconfig"
+#include "../Environments/Dev.xcconfig"

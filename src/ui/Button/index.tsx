@@ -24,6 +24,7 @@ function Button({
   isDisabled,
   isRippleDisabled,
   style: propStyles,
+  textStyle,
   children, onPress,
   onPressIn,
   onPressOut,
@@ -62,13 +63,13 @@ function Button({
   }));
 
   const handlePress = () => {
-    !isRippleDisabled && startRipple();
+    type !== ButtonType.outlined && !isRippleDisabled && startRipple();
     onPress();
   };
 
   return (
     <Pressable
-      style={[mainStyles.button, propStyles, buttonStyle, isDisabled && mainStyles.disabled]}
+      style={[mainStyles.button, buttonStyle, isDisabled && mainStyles.disabled, propStyles]}
       onPress={handlePress}
       onPressIn={onPressIn}
       onPressOut={onPressOut}
@@ -77,7 +78,7 @@ function Button({
     >
 
       {icon && <Icon id={icon} style={mainStyles.icon} />}
-      <Text style={[mainStyles.textWrapper, type === ButtonType.outlined && mainStyles.outlined]}>
+      <Text style={[mainStyles.textWrapper, type === ButtonType.outlined && mainStyles.outlined, textStyle]}>
         {children}
       </Text>
       <Animated.View style={[mainStyles.ripple, rippleStyle]} >

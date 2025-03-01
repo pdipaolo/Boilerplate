@@ -3,17 +3,17 @@
 <plist version="1.0">
 <dict>
 	<key>API_KEY</key>
-	<string>AIzaSyAqzmlyE4zApd7pohuYNv14VFVSzfKcXYs</string>
+	<string>AIzaSyD1kPDOp-NCvfOA6ZyDjPc1TSpGerrI4ts</string>
 	<key>GCM_SENDER_ID</key>
-	<string>87974211047</string>
+	<string>697322606413</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>org.reactnative.boilerplate</string>
+	<string>com.boilerplate.prod</string>
 	<key>PROJECT_ID</key>
-	<string>boilerplate-react-native-c91b4</string>
+	<string>boilerplate-react-native-e25bc</string>
 	<key>STORAGE_BUCKET</key>
-	<string>boilerplate-react-native-c91b4.firebasestorage.app</string>
+	<string>boilerplate-react-native-e25bc.firebasestorage.app</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -25,6 +25,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:87974211047:ios:24d738bbd3204d6f7b2142</string>
+	<string>1:697322606413:ios:ec9801615af78cf947b104</string>
 </dict>
 </plist>

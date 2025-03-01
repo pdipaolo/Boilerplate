@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "697322606413",
+    "project_id": "boilerplate-react-native-e25bc",
+    "storage_bucket": "boilerplate-react-native-e25bc.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:697322606413:android:ec5a80fc0a2421de47b104",
+        "android_client_info": {
+          "package_name": "com.boilerplate"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyANoGLlqZ7vWcogV8AXhgQvrBcZWDreaVQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
