@@ -1,8 +1,8 @@
 //
 //  Default.xcconfig
-//  Boilerplate
+//  BorgoAI
 //
 //  Created by dipaolo on 27/02/25.
 //
-#include "Pods/Target Support Files/Pods-Boilerplate/Pods-Boilerplate.release.xcconfig"
+#include "Pods/Target Support Files/Pods-BorgoAI/Pods-BorgoAI.release.xcconfig"
 #include "../Environments/Prod.xcconfig"
