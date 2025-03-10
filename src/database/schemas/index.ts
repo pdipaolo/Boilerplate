@@ -1,1 +1,1 @@
-export { Boilerplate } from './boilerplate';
+export { Borgoai } from './borgoai';

@@ -1,21 +1,21 @@
 {
   "project_info": {
-    "project_number": "697322606413",
-    "project_id": "boilerplate-react-native-e25bc",
-    "storage_bucket": "boilerplate-react-native-e25bc.firebasestorage.app"
+    "project_number": "951001946399",
+    "project_id": "borgoai",
+    "storage_bucket": "borgoai.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:697322606413:android:ec5a80fc0a2421de47b104",
+        "mobilesdk_app_id": "1:951001946399:android:7371d783a76baaf8c3382a",
         "android_client_info": {
-          "package_name": "com.boilerplate"
+          "package_name": "com.borgoai.borgoai"
         }
       },
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyANoGLlqZ7vWcogV8AXhgQvrBcZWDreaVQ"
+          "current_key": "AIzaSyC-C05a9tzd0Kbe-eFskqKpYzzvKSztKSc"
         }
       ],
       "services": {

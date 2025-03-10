@@ -78,7 +78,7 @@ android {
     buildToolsVersion rootProject.ext.buildToolsVersion
     compileSdk rootProject.ext.compileSdkVersion
 
-    namespace "com.boilerplate"
+    namespace "com.borgoai"
     flavorDimensions "default"
     productFlavors {
         dev {
@@ -88,7 +88,7 @@ android {
         prod { }
     }
     defaultConfig {
-        applicationId "com.boilerplate"
+        applicationId "com.borgoai.borgoai"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
