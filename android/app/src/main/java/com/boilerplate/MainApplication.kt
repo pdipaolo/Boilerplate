@@ -1,4 +1,4 @@
-package com.boilerplate
+package com.borgoAI
 
 import android.app.Application
 import com.facebook.react.PackageList
