@@ -1,10 +1,10 @@
 import { Realm } from '@realm/react';
 
-class Borgoai extends Realm.Object {
+class Boilerplate extends Realm.Object {
   _id!: string;
 
   static schema = {
-    name: 'Borgoai',
+    name: 'Boilerplate',
     primaryKey: '_id',
     properties: {
       _id: 'objectId',
@@ -12,4 +12,4 @@ class Borgoai extends Realm.Object {
   };
 }
 
-export { Borgoai };
+export { Boilerplate };

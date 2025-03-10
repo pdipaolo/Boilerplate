@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  Borgoai
+//  Boilerplate
 //
 //  Created by dipaolo on 28/01/25.
 //
@@ -15,7 +15,7 @@ import Firebase
 class AppDelegate: RCTAppDelegate {
   override func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
     FirebaseApp.configure()
-    self.moduleName = "Borgoai"
+    self.moduleName = "Boilerplate"
     self.dependencyProvider = RCTAppDependencyProvider()
  
     // You can add your custom initial props in the dictionary below.
