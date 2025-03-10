@@ -18,7 +18,7 @@ async function utilityRetriveConfiguration() {
     await syncConfiguration();
     const ID = remoteConfig().getValue('ID').asNumber();
     const APP_UPDATE = remoteConfig().getValue('APP_UPDATE').asString();
-    console.log('[utilityRetriveConfiguration] APP_UPDATE:', APP_UPDATE);
+
     return {
       id: ID,
       app_update: JSON.parse(APP_UPDATE).TYPE === 0 ? null : APP_UPDATE,

@@ -11,9 +11,9 @@
 		4B250D2F2D710818009B6116 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4B250D2D2D710818009B6116 /* GoogleService-Info.plist */; };
 		4B250D302D710818009B6116 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4B250D2E2D710818009B6116 /* GoogleService-Info.plist */; };
 		4BAE0A922D492EC60011A5BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BAE0A912D492EC60011A5BE /* AppDelegate.swift */; };
-		4C1C3BEF255F6C44D3A6858A /* Pods_BorgoAI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7015D4917E178FDA42AC6611 /* Pods_BorgoAI.framework */; };
 		81AB9BB82411601600AC10FF /* BootSplash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* BootSplash.storyboard */; };
 		ABE4E2C771F35216DFACB0E0 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 37025EE347C51CDABFF364C8 /* PrivacyInfo.xcprivacy */; };
+		AD1E7BE10C5CCB352FCA1A96 /* Pods_Boilerplate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3831410BB554DBDED0B3BF52 /* Pods_Boilerplate.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -22,18 +22,19 @@
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
-			remoteInfo = BorgoAI;
+			remoteInfo = Boilerplate;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		00E356EE1AD99517003FC87E /* BoilerplateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BoilerplateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07F961A680F5B00A75B9A /* BorgoAI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BorgoAI.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = BorgoAI/Images.xcassets; sourceTree = "<group>"; };
-		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = BorgoAI/Info.plist; sourceTree = "<group>"; };
-		13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PrivacyInfo.xcprivacy; path = BorgoAI/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
-		1DC63E9F03F925A0E87D57A1 /* Pods-BorgoAI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BorgoAI.release.xcconfig"; path = "Target Support Files/Pods-BorgoAI/Pods-BorgoAI.release.xcconfig"; sourceTree = "<group>"; };
-		37025EE347C51CDABFF364C8 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; name = PrivacyInfo.xcprivacy; path = BorgoAI/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* Boilerplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Boilerplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Boilerplate/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Boilerplate/Info.plist; sourceTree = "<group>"; };
+		13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PrivacyInfo.xcprivacy; path = Boilerplate/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		37025EE347C51CDABFF364C8 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; name = PrivacyInfo.xcprivacy; path = Boilerplate/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		3831410BB554DBDED0B3BF52 /* Pods_Boilerplate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Boilerplate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B4392A12AC88292D35C810B /* Pods-Boilerplate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Boilerplate.debug.xcconfig"; path = "Target Support Files/Pods-Boilerplate/Pods-Boilerplate.debug.xcconfig"; sourceTree = "<group>"; };
 		4B250D2D2D710818009B6116 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4B250D2E2D710818009B6116 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4B250D332D710BDC009B6116 /* Default.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Default.xcconfig; sourceTree = "<group>"; };
@@ -41,11 +42,10 @@
 		4B250D352D710BF5009B6116 /* Prod.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Prod.xcconfig; sourceTree = "<group>"; };
 		4B250D3A2D710FA9009B6116 /* Dev.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Dev.xcconfig; sourceTree = "<group>"; };
 		4B250D3C2D7111B4009B6116 /* Prod.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Prod.xcconfig; sourceTree = "<group>"; };
-		4BAE0A902D492EC60011A5BE /* BorgoAI-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BorgoAI-Bridging-Header.h"; sourceTree = "<group>"; };
+		4BAE0A902D492EC60011A5BE /* Boilerplate-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Boilerplate-Bridging-Header.h"; sourceTree = "<group>"; };
 		4BAE0A912D492EC60011A5BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7015D4917E178FDA42AC6611 /* Pods_BorgoAI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BorgoAI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		81AB9BB72411601600AC10FF /* BootSplash.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = BootSplash.storyboard; path = BorgoAI/BootSplash.storyboard; sourceTree = "<group>"; };
-		AA81A85DFD057BF3905AEAE9 /* Pods-BorgoAI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BorgoAI.debug.xcconfig"; path = "Target Support Files/Pods-BorgoAI/Pods-BorgoAI.debug.xcconfig"; sourceTree = "<group>"; };
+		5709B34CF0A7D63546082F79 /* Pods-Boilerplate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Boilerplate.release.xcconfig"; path = "Target Support Files/Pods-Boilerplate/Pods-Boilerplate.release.xcconfig"; sourceTree = "<group>"; };
+		81AB9BB72411601600AC10FF /* BootSplash.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = BootSplash.storyboard; path = Boilerplate/BootSplash.storyboard; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -61,14 +61,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C1C3BEF255F6C44D3A6858A /* Pods_BorgoAI.framework in Frameworks */,
+				AD1E7BE10C5CCB352FCA1A96 /* Pods_Boilerplate.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		13B07FAE1A68108700A75B9A /* BorgoAI */ = {
+		13B07FAE1A68108700A75B9A /* Boilerplate */ = {
 			isa = PBXGroup;
 			children = (
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
@@ -77,16 +77,16 @@
 				13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */,
 				37025EE347C51CDABFF364C8 /* PrivacyInfo.xcprivacy */,
 				4BAE0A912D492EC60011A5BE /* AppDelegate.swift */,
-				4BAE0A902D492EC60011A5BE /* BorgoAI-Bridging-Header.h */,
+				4BAE0A902D492EC60011A5BE /* Boilerplate-Bridging-Header.h */,
 			);
-			name = BorgoAI;
+			name = Boilerplate;
 			sourceTree = "<group>";
 		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				7015D4917E178FDA42AC6611 /* Pods_BorgoAI.framework */,
+				3831410BB554DBDED0B3BF52 /* Pods_Boilerplate.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -156,11 +156,11 @@
 			isa = PBXGroup;
 			children = (
 				4B250D3B2D71113A009B6116 /* Configuration */,
-				13B07FAE1A68108700A75B9A /* BorgoAI */,
+				13B07FAE1A68108700A75B9A /* Boilerplate */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
-				F387DA166D5B338F1A61254C /* Pods */,
+				BBD78D7AC51CEA395F1C20DB /* Pods */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -170,19 +170,18 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* BorgoAI.app */,
+				13B07F961A680F5B00A75B9A /* Boilerplate.app */,
 				00E356EE1AD99517003FC87E /* BoilerplateTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F387DA166D5B338F1A61254C /* Pods */ = {
+		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				AA81A85DFD057BF3905AEAE9 /* Pods-BorgoAI.debug.xcconfig */,
-				1DC63E9F03F925A0E87D57A1 /* Pods-BorgoAI.release.xcconfig */,
+				3B4392A12AC88292D35C810B /* Pods-Boilerplate.debug.xcconfig */,
+				5709B34CF0A7D63546082F79 /* Pods-Boilerplate.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -207,9 +206,9 @@
 			productReference = 00E356EE1AD99517003FC87E /* BoilerplateTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		13B07F861A680F5B00A75B9A /* BorgoAI */ = {
+		13B07F861A680F5B00A75B9A /* Boilerplate */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "BorgoAI" */;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "Boilerplate" */;
 			buildPhases = (
 				C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */,
 				13B07F871A680F5B00A75B9A /* Sources */,
@@ -224,9 +223,9 @@
 			);
 			dependencies = (
 			);
-			name = BorgoAI;
-			productName = BorgoAI;
-			productReference = 13B07F961A680F5B00A75B9A /* BorgoAI.app */;
+			name = Boilerplate;
+			productName = Boilerplate;
+			productReference = 13B07F961A680F5B00A75B9A /* Boilerplate.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -246,7 +245,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "BorgoAI" */;
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "Boilerplate" */;
 			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -259,7 +258,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				13B07F861A680F5B00A75B9A /* BorgoAI */,
+				13B07F861A680F5B00A75B9A /* Boilerplate */,
 				00E356ED1AD99517003FC87E /* BoilerplateTests */,
 			);
 		};
@@ -310,15 +309,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BorgoAI/Pods-BorgoAI-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Boilerplate/Pods-Boilerplate-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BorgoAI/Pods-BorgoAI-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Boilerplate/Pods-Boilerplate-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BorgoAI/Pods-BorgoAI-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Boilerplate/Pods-Boilerplate-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		3D3126208444632269015D22 /* [CP-User] [RNFB] Core Configuration */ = {
@@ -349,7 +348,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-BorgoAI-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Boilerplate-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -362,15 +361,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BorgoAI/Pods-BorgoAI-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Boilerplate/Pods-Boilerplate-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BorgoAI/Pods-BorgoAI-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Boilerplate/Pods-Boilerplate-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BorgoAI/Pods-BorgoAI-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Boilerplate/Pods-Boilerplate-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -396,7 +395,7 @@
 /* Begin PBXTargetDependency section */
 		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 13B07F861A680F5B00A75B9A /* BorgoAI */;
+			target = 13B07F861A680F5B00A75B9A /* Boilerplate */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -424,7 +423,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BorgoAI.app/BorgoAI";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Boilerplate.app/Boilerplate";
 			};
 			name = Debug;
 		};
@@ -447,7 +446,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BorgoAI.app/BorgoAI";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Boilerplate.app/Boilerplate";
 			};
 			name = Release;
 		};
@@ -459,7 +458,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = BorgoAI/Info.plist;
+				INFOPLIST_FILE = Boilerplate/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -471,9 +470,9 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.borgoAI.dev;
-				PRODUCT_NAME = BorgoAI;
-				SWIFT_OBJC_BRIDGING_HEADER = "BorgoAI-Bridging-Header.h";
+				PRODUCT_BUNDLE_IDENTIFIER = com.boilerplate.dev;
+				PRODUCT_NAME = Boilerplate;
+				SWIFT_OBJC_BRIDGING_HEADER = "Boilerplate-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -487,7 +486,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				INFOPLIST_FILE = BorgoAI/Info.plist;
+				INFOPLIST_FILE = Boilerplate/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -499,9 +498,9 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.borgoAI.prod;
-				PRODUCT_NAME = BorgoAI;
-				SWIFT_OBJC_BRIDGING_HEADER = "BorgoAI-Bridging-Header.h";
+				PRODUCT_BUNDLE_IDENTIFIER = com.boilerplate.prod;
+				PRODUCT_NAME = Boilerplate;
+				SWIFT_OBJC_BRIDGING_HEADER = "Boilerplate-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -591,10 +590,7 @@
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
 				);
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					" ",
-				);
+				OTHER_LDFLAGS = "$(inherited)  ";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
@@ -678,10 +674,7 @@
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
 				);
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					" ",
-				);
+				OTHER_LDFLAGS = "$(inherited)  ";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				USE_HERMES = true;
@@ -701,7 +694,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "BorgoAI" */ = {
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "Boilerplate" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
@@ -710,7 +703,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "BorgoAI" */ = {
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "Boilerplate" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,
